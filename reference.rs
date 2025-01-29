@@ -2,21 +2,20 @@ fn main()
 {
 
 	// 参照
-	let a=5;
+	let mut a=5;
 	println!("a={}",a);
 
-	let b = &a;		// bはaを参照する
-	println!("b={}",b);	// aの値が出る
+	let b = &mut a;		// bはaを参照する
+	println!("b={}",*b);	// aの値が出る
 
 	// 値を更新するには参照をミュータブルにする必要がある
 	// let mut a =5;
 	// let b = &mut a;
-	/*
+/*
 	*b=10;
-	println!("b={}",b);	// aの値が出る
+	println!("b={}",*b);	// aの値が出る
 	println!("a={}",a); // 更新されたaの値
-	*/
-
+*/
 
 
 	// 範囲演算子
@@ -27,8 +26,5 @@ fn main()
 
 	slice[0] = 300;
 	println!("{}",array[2]);
-	*/
-
-
-
+*/
 }
