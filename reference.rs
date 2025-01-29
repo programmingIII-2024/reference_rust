@@ -2,10 +2,10 @@ fn main()
 {
 
 	// 参照
-	let mut a=5;
+	let a=5;
 	println!("a={}",a);
 
-	let b = &mut a;		// bはaを参照する
+	let b = &a;		// bはaを参照する
 	println!("b={}",*b);	// aの値が出る
 
 	// 値を更新するには参照をミュータブルにする必要がある
